@@ -1,0 +1,3187 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.4">
+    
+    
+      
+        <title>Advanced Mermaid Notes - wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.77f3fd56.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.7fa14f5b.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#02a6f2">
+        
+      
+    
+    
+
+<script src="../../../../../assets/pymdownx-extras/material-extra-theme-7c147bb7.js" type="text/javascript"></script>
+
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/pymdownx-extras/extra-25cd689912.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="light-blue" data-md-color-accent="indigo">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#advanced-mermaid-notes" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+
+<header class="md-header" data-md-component="header">
+  <nav
+    class="md-header__inner md-grid"
+    aria-label="Header"
+  >
+    <a
+      href="../../../../.."
+      title="wiki"
+      class="md-header__button md-logo"
+      aria-label="wiki"
+    >
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Advanced Mermaid Notes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      <div class="md-header-nav__scheme md-header-nav__button md-source__icon md-icon">
+          <a
+            href="javascript:toggleScheme();"
+            title="Light mode"
+            class="light-mode"
+          >
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7l2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10l1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10l-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22z"/></svg>
+          </a>
+          <a
+            href="javascript:toggleScheme();"
+            title="Dark mode"
+            class="dark-mode"
+          >
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.75 4.09l-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91l-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31z"/></svg>
+          </a>
+          <a
+            href="javascript:toggleScheme();"
+            title="System preference"
+            class="system-mode"
+          >
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.5 2c-1.79 1.15-3 3.18-3 5.5s1.21 4.35 3.03 5.5C4.46 13 2 10.54 2 7.5A5.5 5.5 0 0 1 7.5 2m11.57 1.5l1.43 1.43L4.93 20.5 3.5 19.07 19.07 3.5m-6.18 2.43L11.41 5 9.97 6l.42-1.7L9 3.24l1.75-.12.58-1.65L12 3.1l1.73.03-1.35 1.13.51 1.67m-3.3 3.61l-1.16-.73-1.12.78.34-1.32-1.09-.83 1.36-.09.45-1.29.51 1.27 1.36.03-1.05.87.4 1.31M19 13.5a5.5 5.5 0 0 1-5.5 5.5c-1.22 0-2.35-.4-3.26-1.07l7.69-7.69c.67.91 1.07 2.04 1.07 3.26m-4.4 6.58l2.77-1.15-.24 3.35-2.53-2.2m4.33-2.7l1.15-2.77 2.2 2.54-3.35.23m1.15-4.96l-1.14-2.78 3.34.24-2.2 2.54M9.63 18.93l2.77 1.15-2.53 2.19-.24-3.34z"/></svg>
+          </a>
+           <a
+            href="javascript:toggleScheme();"
+            title="Unknown scheme"
+            class="unknown-mode"
+          >
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.07 11.25l-.9.92C13.45 12.89 13 13.5 13 15h-2v-.5c0-1.11.45-2.11 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41a2 2 0 0 0-2-2 2 2 0 0 0-2 2H8a4 4 0 0 1 4-4 4 4 0 0 1 4 4 3.2 3.2 0 0 1-.93 2.25M13 19h-2v-2h2M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10c0-5.53-4.5-10-10-10z"/></svg>
+          </a>
+      </div>
+    </div>
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../.." title="wiki" class="md-nav__button md-logo" aria-label="wiki">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    wiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../Todo/" class="md-nav__link">
+        Todo
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../rules%20%E8%A7%84%E5%88%99/" class="md-nav__link">
+        Rules 规则
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      <label class="md-nav__link" for="__nav_4">
+        Helps
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Helps" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Helps
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Markdown%E8%AF%AD%E6%B3%95%E5%B8%AE%E5%8A%A9/" class="md-nav__link">
+        Markdown语法帮助
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%85%B3%E4%BA%8E%E7%8F%AD%E7%BA%A7%E7%9A%84%E4%BA%A4%E4%BA%92%E7%94%B5%E5%AD%90%E7%99%BD%E6%9D%BF%E4%B8%80%E4%BD%93%E6%9C%BA/" class="md-nav__link">
+        关于班级的交互电子白板一体机
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" checked>
+      
+      <label class="md-nav__link" for="__nav_4_3">
+        Pymdx
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pymdx" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Pymdx
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pymdx-help/" class="md-nav__link">
+        Pymdx help
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pymdx-test/" class="md-nav__link">
+        Pymdx test
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3_3" type="checkbox" id="__nav_4_3_3" checked>
+      
+      <label class="md-nav__link" for="__nav_4_3_3">
+        Markdown
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Markdown" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Markdown
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        PyMdown Extensions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        Frequently Asked Questions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage_notes/" class="md-nav__link">
+        Usage Notes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3_3_5" data-md-state="indeterminate" type="checkbox" id="__nav_4_3_3_5" checked>
+      
+      <label class="md-nav__link" for="__nav_4_3_3_5">
+        Extensions
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Extensions" data-md-level="4">
+        <label class="md-nav__title" for="__nav_4_3_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          Extensions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extensions/arithmatex/" class="md-nav__link">
+        Arithmatex
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extensions/b64/" class="md-nav__link">
+        B64
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extensions/betterem/" class="md-nav__link">
+        Betterem
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extensions/caret/" class="md-nav__link">
+        Caret
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extensions/critic/" class="md-nav__link">
+        Critic
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extensions/details/" class="md-nav__link">
+        Details
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extensions/emoji/" class="md-nav__link">
+        Emoji
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extensions/escapeall/" class="md-nav__link">
+        Escapeall
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extensions/extra/" class="md-nav__link">
+        Extra
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extensions/highlight/" class="md-nav__link">
+        Highlight
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extensions/inlinehilite/" class="md-nav__link">
+        Inlinehilite
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extensions/keys/" class="md-nav__link">
+        Keys
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extensions/magiclink/" class="md-nav__link">
+        Magiclink
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extensions/mark/" class="md-nav__link">
+        Mark
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extensions/pathconverter/" class="md-nav__link">
+        Pathconverter
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extensions/progressbar/" class="md-nav__link">
+        Progressbar
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extensions/saneheaders/" class="md-nav__link">
+        Saneheaders
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extensions/smartsymbols/" class="md-nav__link">
+        Smartsymbols
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extensions/snippets/" class="md-nav__link">
+        Snippets
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extensions/striphtml/" class="md-nav__link">
+        Striphtml
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extensions/superfences/" class="md-nav__link">
+        Superfences
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extensions/tabbed/" class="md-nav__link">
+        Tabbed
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extensions/tasklist/" class="md-nav__link">
+        Tasklist
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extensions/tilde/" class="md-nav__link">
+        Tilde
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3_3_6" type="checkbox" id="__nav_4_3_3_6" checked>
+      
+      <label class="md-nav__link" for="__nav_4_3_3_6">
+        Extras
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Extras" data-md-level="4">
+        <label class="md-nav__title" for="__nav_4_3_3_6">
+          <span class="md-nav__icon md-icon"></span>
+          Extras
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Untitled/" class="md-nav__link">
+        Untitled
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Advanced Mermaid Notes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Advanced Mermaid Notes
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    Setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-diagrams" class="md-nav__link">
+    Practical Diagrams
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-loader" class="md-nav__link">
+    Custom Loader
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    Putting it All Together
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../slugs/" class="md-nav__link">
+        Slugs
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" data-md-state="indeterminate" type="checkbox" id="__nav_5" checked>
+      
+      <label class="md-nav__link" for="__nav_5">
+        Infodot
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Infodot" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Infodot
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_1" data-md-state="indeterminate" type="checkbox" id="__nav_5_1" checked>
+      
+      <label class="md-nav__link" for="__nav_5_1">
+        人物
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="人物" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_1">
+          <span class="md-nav__icon md-icon"></span>
+          人物
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../infodot/%E4%BA%BA%E7%89%A9/%E6%9E%97%E5%88%99%E5%BE%90/" class="md-nav__link">
+        林则徐
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" data-md-state="indeterminate" type="checkbox" id="__nav_5_2" checked>
+      
+      <label class="md-nav__link" for="__nav_5_2">
+        历史事件
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="历史事件" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          历史事件
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../infodot/%E5%8E%86%E5%8F%B2%E4%BA%8B%E4%BB%B6/%E5%8D%97%E4%BA%AC%E6%9D%A1%E7%BA%A6/" class="md-nav__link">
+        南京条约
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../infodot/%E5%8E%86%E5%8F%B2%E4%BA%8B%E4%BB%B6/%E8%99%8E%E9%97%A8%E9%94%80%E7%83%9F/" class="md-nav__link">
+        虎门销烟
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" data-md-state="indeterminate" type="checkbox" id="__nav_6" checked>
+      
+      <label class="md-nav__link" for="__nav_6">
+        Notes
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Notes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Notes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E5%8E%86%E5%8F%B2/" class="md-nav__link">
+        历史
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E5%9C%B0%E7%90%86/" class="md-nav__link">
+        地理
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E6%95%B0%E5%AD%A6/" class="md-nav__link">
+        数学
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E7%94%9F%E7%89%A9/" class="md-nav__link">
+        生物
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%8B%B1%E8%AF%AD/" class="md-nav__link">
+        英语
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%AF%AD%E6%96%87/" class="md-nav__link">
+        语文
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E9%81%93%E6%B3%95/" class="md-nav__link">
+        道法
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_8" data-md-state="indeterminate" type="checkbox" id="__nav_6_8" checked>
+      
+      <label class="md-nav__link" for="__nav_6_8">
+        历史
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="历史" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_8">
+          <span class="md-nav__icon md-icon"></span>
+          历史
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_8_1" data-md-state="indeterminate" type="checkbox" id="__nav_6_8_1" checked>
+      
+      <label class="md-nav__link" for="__nav_6_8_1">
+        八上
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="八上" data-md-level="3">
+        <label class="md-nav__title" for="__nav_6_8_1">
+          <span class="md-nav__icon md-icon"></span>
+          八上
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E5%8E%86%E5%8F%B2/%E5%85%AB%E4%B8%8A/%E6%9C%9F%E4%B8%AD%E8%80%83%E8%AF%95%E5%8E%86%E5%8F%B2%E5%AD%A6%E7%A7%91%E5%A4%8D%E4%B9%A0%E5%86%85%E5%AE%B9/" class="md-nav__link">
+        期中考试历史学科复习内容
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E5%8E%86%E5%8F%B2/%E5%85%AB%E4%B8%8A/%E7%AC%AC%E4%B8%80%E8%AF%BE-%E9%B8%A6%E7%89%87%E6%88%98%E4%BA%89/" class="md-nav__link">
+        第一课 鸦片战争
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E5%8E%86%E5%8F%B2/%E5%85%AB%E4%B8%8A/%E7%AC%AC%E5%8D%81%E4%B8%80%E8%AF%BE-%E5%8C%97%E6%B4%8B%E6%94%BF%E5%BA%9C%E7%9A%84%E7%BB%9F%E6%B2%BB%E4%B8%8E%E5%86%9B%E9%98%80%E5%89%B2%E6%8D%AE/" class="md-nav__link">
+        第十一课 北洋政府的统治与军阀割据
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E5%8E%86%E5%8F%B2/%E5%85%AB%E4%B8%8A/%E7%AC%AC%E5%8D%81%E4%BA%8C%E8%AF%BE-%E6%96%B0%E6%96%87%E5%8C%96%E8%BF%90%E5%8A%A8/" class="md-nav__link">
+        aa
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_8_2" data-md-state="indeterminate" type="checkbox" id="__nav_6_8_2" checked>
+      
+      <label class="md-nav__link" for="__nav_6_8_2">
+        八下
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="八下" data-md-level="3">
+        <label class="md-nav__title" for="__nav_6_8_2">
+          <span class="md-nav__icon md-icon"></span>
+          八下
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E5%8E%86%E5%8F%B2/%E5%85%AB%E4%B8%8B/%E7%AC%AC%E4%B8%80%E8%AF%BE-%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E6%88%90%E7%AB%8B/" class="md-nav__link">
+        第一课 中华人民共和国成立
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E5%8E%86%E5%8F%B2/%E5%85%AB%E4%B8%8B/%E7%AC%AC%E4%BA%8C%E8%AF%BE-%E6%8A%97%E7%BE%8E%E6%8F%B4%E6%9C%9D/" class="md-nav__link">
+        第二课 抗美援朝
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_9" data-md-state="indeterminate" type="checkbox" id="__nav_6_9" checked>
+      
+      <label class="md-nav__link" for="__nav_6_9">
+        地理
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="地理" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_9">
+          <span class="md-nav__icon md-icon"></span>
+          地理
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E5%9C%B0%E7%90%86/%E6%9C%AA%E5%91%BD%E5%90%8D/" class="md-nav__link">
+        未命名
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_9_2" data-md-state="indeterminate" type="checkbox" id="__nav_6_9_2" checked>
+      
+      <label class="md-nav__link" for="__nav_6_9_2">
+        八上
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="八上" data-md-level="3">
+        <label class="md-nav__title" for="__nav_6_9_2">
+          <span class="md-nav__icon md-icon"></span>
+          八上
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E5%9C%B0%E7%90%86/%E5%85%AB%E4%B8%8A/%E5%9C%B0%E7%90%86%E5%85%AB%E4%B8%8A-2-rjs/" class="md-nav__link">
+        地形与地势
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E5%9C%B0%E7%90%86/%E5%85%AB%E4%B8%8A/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/" class="md-nav__link">
+        思维导图
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E5%9C%B0%E7%90%86/%E5%85%AB%E4%B8%8A/%E7%AC%AC%E4%B8%80%E7%AB%A0%E7%AC%AC%E4%B8%80%E8%8A%82%20%E7%96%86%E5%9F%9F/" class="md-nav__link">
+        第一章第一节 疆域
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_9_3" data-md-state="indeterminate" type="checkbox" id="__nav_6_9_3" checked>
+      
+      <label class="md-nav__link" for="__nav_6_9_3">
+        八下
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="八下" data-md-level="3">
+        <label class="md-nav__title" for="__nav_6_9_3">
+          <span class="md-nav__icon md-icon"></span>
+          八下
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E5%9C%B0%E7%90%86/%E5%85%AB%E4%B8%8B/6.1-7.2%20rjs/" class="md-nav__link">
+        第六章-第一节-自然特征与农业
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E5%9C%B0%E7%90%86/%E5%85%AB%E4%B8%8B/%E5%9C%B0%E7%90%86B3M1U1/" class="md-nav__link">
+        我国自然环境差异显著
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E5%9C%B0%E7%90%86/%E5%85%AB%E4%B8%8B/%E7%AC%AC%E4%B8%83%E7%AB%A0-%E7%AC%AC%E4%B8%80%E8%8A%82-%E8%87%AA%E7%84%B6%E7%89%B9%E5%BE%81%E4%B8%8E%E5%86%9C%E4%B8%9A/" class="md-nav__link">
+        第七章 第一节 自然特征与农业
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E5%9C%B0%E7%90%86/%E5%85%AB%E4%B8%8B/%E7%AC%AC%E4%B8%83%E7%AB%A0-%E7%AC%AC%E4%BA%8C%E8%8A%82-%E9%95%BF%E6%B1%9F%E4%B8%89%E8%A7%92%E6%B4%B2/" class="md-nav__link">
+        第七章 第二节 长江三角洲
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E5%9C%B0%E7%90%86/%E5%85%AB%E4%B8%8B/%E7%AC%AC%E5%85%AD%E7%AB%A0-%E7%AC%AC%E4%B8%80%E8%8A%82-%E8%87%AA%E7%84%B6%E7%89%B9%E5%BE%81%E4%B8%8E%E5%86%9C%E4%B8%9A/" class="md-nav__link">
+        第六章 第一节 自然特征与农业
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E5%9C%B0%E7%90%86/%E5%85%AB%E4%B8%8B/%E7%AC%AC%E5%85%AD%E7%AB%A0-%E7%AC%AC%E4%B8%89%E8%8A%82-%E9%BB%84%E5%9C%9F%E9%AB%98%E5%8E%9F/" class="md-nav__link">
+        第六章 第三节 黄土高原
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E5%9C%B0%E7%90%86/%E5%85%AB%E4%B8%8B/%E7%AC%AC%E5%85%AD%E7%AB%A0-%E7%AC%AC%E5%9B%9B%E8%8A%82-%E5%8C%97%E4%BA%AC/" class="md-nav__link">
+        第六章 第四节 北京
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E5%9C%B0%E7%90%86/%E5%85%AB%E4%B8%8B/%E7%AC%AC%E5%85%AD%E8%8A%82-%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E2%80%B3%E7%99%BD%E5%B1%B1%E9%BB%91%E6%B0%B4%E2%80%B3%E2%80%94%E4%B8%9C%E5%8C%97%E4%B8%89%E7%9C%81/" class="md-nav__link">
+        第六节 第二章 ″白山黑水″—东北三省
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_10" data-md-state="indeterminate" type="checkbox" id="__nav_6_10" checked>
+      
+      <label class="md-nav__link" for="__nav_6_10">
+        数学
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="数学" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_10">
+          <span class="md-nav__icon md-icon"></span>
+          数学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_10_1" data-md-state="indeterminate" type="checkbox" id="__nav_6_10_1" checked>
+      
+      <label class="md-nav__link" for="__nav_6_10_1">
+        七下
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="七下" data-md-level="3">
+        <label class="md-nav__title" for="__nav_6_10_1">
+          <span class="md-nav__icon md-icon"></span>
+          七下
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E6%95%B0%E5%AD%A6/%E4%B8%83%E4%B8%8B/%E4%B8%89%E8%A7%92%E5%BD%A2%E8%A7%92%E5%BA%A6%E8%AE%A1%E7%AE%97%E6%A8%A1%E5%9E%8B/" class="md-nav__link">
+        三角形角度计算模型
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_10_2" data-md-state="indeterminate" type="checkbox" id="__nav_6_10_2" checked>
+      
+      <label class="md-nav__link" for="__nav_6_10_2">
+        八上
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="八上" data-md-level="3">
+        <label class="md-nav__title" for="__nav_6_10_2">
+          <span class="md-nav__icon md-icon"></span>
+          八上
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E6%95%B0%E5%AD%A6/%E5%85%AB%E4%B8%8A/Untitled/" class="md-nav__link">
+        Untitled
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_11" data-md-state="indeterminate" type="checkbox" id="__nav_6_11" checked>
+      
+      <label class="md-nav__link" for="__nav_6_11">
+        英语
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="英语" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_11">
+          <span class="md-nav__icon md-icon"></span>
+          英语
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%8B%B1%E8%AF%AD/%E7%89%B9%E6%AE%8A%E8%AF%8D%E8%AF%AD%E5%88%97%E8%A1%A8/" class="md-nav__link">
+        特殊词语列表
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%8B%B1%E8%AF%AD/%E8%8B%B1%E8%AF%AD-%E5%8F%A5%E5%9E%8B/" class="md-nav__link">
+        英语 句型
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%8B%B1%E8%AF%AD/%E8%8B%B1%E8%AF%AD-%E5%AD%97%E5%85%B8/" class="md-nav__link">
+        英语 字典
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%8B%B1%E8%AF%AD/%E8%8B%B1%E8%AF%AD-%E7%9F%AD%E8%AF%AD/" class="md-nav__link">
+        英语 短语
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_11_5" data-md-state="indeterminate" type="checkbox" id="__nav_6_11_5" checked>
+      
+      <label class="md-nav__link" for="__nav_6_11_5">
+        2020 2021寒假
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="2020 2021寒假" data-md-level="3">
+        <label class="md-nav__title" for="__nav_6_11_5">
+          <span class="md-nav__icon md-icon"></span>
+          2020 2021寒假
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%8B%B1%E8%AF%AD/2020-2021%E5%AF%92%E5%81%87/%E8%AE%B2%E4%B9%893/" class="md-nav__link">
+        讲义3
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%8B%B1%E8%AF%AD/2020-2021%E5%AF%92%E5%81%87/%E8%AE%B2%E4%B9%894/" class="md-nav__link">
+        讲义4
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%8B%B1%E8%AF%AD/2020-2021%E5%AF%92%E5%81%87/%E8%AE%B2%E4%B9%895/" class="md-nav__link">
+        讲义5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%8B%B1%E8%AF%AD/2020-2021%E5%AF%92%E5%81%87/%E8%AE%B2%E4%B9%896/" class="md-nav__link">
+        讲义6
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_11_6" data-md-state="indeterminate" type="checkbox" id="__nav_6_11_6" checked>
+      
+      <label class="md-nav__link" for="__nav_6_11_6">
+        作文
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="作文" data-md-level="3">
+        <label class="md-nav__title" for="__nav_6_11_6">
+          <span class="md-nav__icon md-icon"></span>
+          作文
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_11_6_1" data-md-state="indeterminate" type="checkbox" id="__nav_6_11_6_1" checked>
+      
+      <label class="md-nav__link" for="__nav_6_11_6_1">
+        八上
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="八上" data-md-level="4">
+        <label class="md-nav__title" for="__nav_6_11_6_1">
+          <span class="md-nav__icon md-icon"></span>
+          八上
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%8B%B1%E8%AF%AD/%E4%BD%9C%E6%96%87/%E5%85%AB%E4%B8%8A/My%20hometown%20Daqing/" class="md-nav__link">
+        My hometown Daqing
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_11_7" data-md-state="indeterminate" type="checkbox" id="__nav_6_11_7" checked>
+      
+      <label class="md-nav__link" for="__nav_6_11_7">
+        句型
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="句型" data-md-level="3">
+        <label class="md-nav__title" for="__nav_6_11_7">
+          <span class="md-nav__icon md-icon"></span>
+          句型
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E5%8F%8D%E6%84%8F%E7%96%91%E9%97%AE%E5%8F%A5/" class="md-nav__link">
+        反意疑问句
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E9%80%89%E6%8B%A9%E7%96%91%E9%97%AE%E5%8F%A5/" class="md-nav__link">
+        选择疑问句
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_11_8" data-md-state="indeterminate" type="checkbox" id="__nav_6_11_8" checked>
+      
+      <label class="md-nav__link" for="__nav_6_11_8">
+        字典
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="字典" data-md-level="3">
+        <label class="md-nav__title" for="__nav_6_11_8">
+          <span class="md-nav__icon md-icon"></span>
+          字典
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%8B%B1%E8%AF%AD/%E5%AD%97%E5%85%B8/crayon/" class="md-nav__link">
+        Crayon
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%8B%B1%E8%AF%AD/%E5%AD%97%E5%85%B8/%E6%83%85%E6%80%81%E5%8A%A8%E8%AF%8D/" class="md-nav__link">
+        情态动词
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%8B%B1%E8%AF%AD/%E5%AD%97%E5%85%B8/%E6%84%9F%E5%AE%98%E5%8A%A8%E8%AF%8D/" class="md-nav__link">
+        感官动词
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_11_9" data-md-state="indeterminate" type="checkbox" id="__nav_6_11_9" checked>
+      
+      <label class="md-nav__link" for="__nav_6_11_9">
+        短语
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="短语" data-md-level="3">
+        <label class="md-nav__title" for="__nav_6_11_9">
+          <span class="md-nav__icon md-icon"></span>
+          短语
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%8B%B1%E8%AF%AD/%E7%9F%AD%E8%AF%AD/a%20bit/" class="md-nav__link">
+        A bit
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%8B%B1%E8%AF%AD/%E7%9F%AD%E8%AF%AD/a%20little-a%20few/" class="md-nav__link">
+        A little a few
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%8B%B1%E8%AF%AD/%E7%9F%AD%E8%AF%AD/good%20fun/" class="md-nav__link">
+        Good fun
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%8B%B1%E8%AF%AD/%E7%9F%AD%E8%AF%AD/not---but---/" class="md-nav__link">
+        Not   but   
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_12" data-md-state="indeterminate" type="checkbox" id="__nav_6_12" checked>
+      
+      <label class="md-nav__link" for="__nav_6_12">
+        语文
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="语文" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_12">
+          <span class="md-nav__icon md-icon"></span>
+          语文
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_12_1" data-md-state="indeterminate" type="checkbox" id="__nav_6_12_1" checked>
+      
+      <label class="md-nav__link" for="__nav_6_12_1">
+        七下
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="七下" data-md-level="3">
+        <label class="md-nav__title" for="__nav_6_12_1">
+          <span class="md-nav__icon md-icon"></span>
+          七下
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%AF%AD%E6%96%87/%E4%B8%83%E4%B8%8B/%E5%8F%A4%E8%AF%97%E5%85%AD%E9%A6%96/" class="md-nav__link">
+        古诗六首
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%AF%AD%E6%96%87/%E4%B8%83%E4%B8%8B/%E5%8F%A4%E8%AF%97%E5%9B%9B%E9%A6%96/" class="md-nav__link">
+        古诗四首
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%AF%AD%E6%96%87/%E4%B8%83%E4%B8%8B/%E5%8F%A4%E8%AF%97%E8%AF%8D%E5%9B%9B%E9%A6%96/" class="md-nav__link">
+        古诗词四首
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%AF%AD%E6%96%87/%E4%B8%83%E4%B8%8B/%E5%A4%9C%E4%B8%8A%E5%8F%97%E9%99%8D%E5%9F%8E%E9%97%BB%E7%AC%9B/" class="md-nav__link">
+        夜上受降城闻笛
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%AF%AD%E6%96%87/%E4%B8%83%E4%B8%8B/%E5%A5%B3%E5%A8%B2%E9%80%A0%E4%BA%BA/" class="md-nav__link">
+        女娲造人
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%AF%AD%E6%96%87/%E4%B8%83%E4%B8%8B/%E5%AF%93%E8%A8%80%E5%9B%9B%E5%88%99/" class="md-nav__link">
+        寓言四则
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%AF%AD%E6%96%87/%E4%B8%83%E4%B8%8B/%E5%B3%A8%E7%9C%89%E5%B1%B1%E6%9C%88%E6%AD%8C/" class="md-nav__link">
+        峨眉山月歌
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%AF%AD%E6%96%87/%E4%B8%83%E4%B8%8B/%E6%9C%9D%E8%8A%B1%E5%A4%95%E6%8B%BE/" class="md-nav__link">
+        朝花夕拾
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%AF%AD%E6%96%87/%E4%B8%83%E4%B8%8B/%E6%A4%8D%E6%A0%91%E7%9A%84%E7%89%A7%E7%BE%8A%E4%BA%BA/" class="md-nav__link">
+        植树的牧羊人
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%AF%AD%E6%96%87/%E4%B8%83%E4%B8%8B/%E6%B2%B3%E4%B8%AD%E7%9F%B3%E5%85%BD/" class="md-nav__link">
+        河中石兽
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%AF%AD%E6%96%87/%E4%B8%83%E4%B8%8B/%E6%B3%8A%E7%A7%A6%E6%B7%AE%E3%80%81%E8%B4%BE%E7%94%9F/" class="md-nav__link">
+        泊秦淮、贾生
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%AF%AD%E6%96%87/%E4%B8%83%E4%B8%8B/%E7%88%B1%E8%8E%B2%E8%AF%B4/" class="md-nav__link">
+        爱莲说
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%AF%AD%E6%96%87/%E4%B8%83%E4%B8%8B/%E7%8B%BC/" class="md-nav__link">
+        狼
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%AF%AD%E6%96%87/%E4%B8%83%E4%B8%8B/%E7%8C%AB/" class="md-nav__link">
+        猫
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%AF%AD%E6%96%87/%E4%B8%83%E4%B8%8B/%E7%9A%87%E5%B8%9D%E7%9A%84%E6%96%B0%E8%A3%85/" class="md-nav__link">
+        皇帝的新装
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%AF%AD%E6%96%87/%E4%B8%83%E4%B8%8B/%E7%B4%AB%E8%97%A4%E8%90%9D%E7%80%91%E5%B8%83/" class="md-nav__link">
+        紫藤萝瀑布
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%AF%AD%E6%96%87/%E4%B8%83%E4%B8%8B/%E7%BA%A6%E5%AE%A2%E3%80%81%E8%BF%87%E6%9D%BE%E6%BA%90%E6%99%A8%E7%82%8A%E6%BC%86%E5%85%AC%E5%BA%97/" class="md-nav__link">
+        约客、过松源晨炊漆公店
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%AF%AD%E6%96%87/%E4%B8%83%E4%B8%8B/%E7%BA%AA%E5%BF%B5%E7%99%BD%E6%B1%82%E6%81%A9/" class="md-nav__link">
+        纪念白求恩
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%AF%AD%E6%96%87/%E4%B8%83%E4%B8%8B/%E8%AE%BA%E8%AF%AD%E5%8D%81%E4%BA%8C%E5%88%99/" class="md-nav__link">
+        论语十二则
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%AF%AD%E6%96%87/%E4%B8%83%E4%B8%8B/%E8%AF%AB%E5%AD%90%E4%B9%A6/" class="md-nav__link">
+        诫子书
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%AF%AD%E6%96%87/%E4%B8%83%E4%B8%8B/%E9%99%8B%E5%AE%A4%E9%93%AD/" class="md-nav__link">
+        陋室铭
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_12_2" data-md-state="indeterminate" type="checkbox" id="__nav_6_12_2" checked>
+      
+      <label class="md-nav__link" for="__nav_6_12_2">
+        八上
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="八上" data-md-level="3">
+        <label class="md-nav__title" for="__nav_6_12_2">
+          <span class="md-nav__icon md-icon"></span>
+          八上
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%AF%AD%E6%96%87/%E5%85%AB%E4%B8%8A/%E5%AD%9F%E5%AD%90%E4%B8%89%E5%88%99%20MDB3M6C22/" class="md-nav__link">
+        孟子三则 MDB3M6C22
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_12_3" data-md-state="indeterminate" type="checkbox" id="__nav_6_12_3" checked>
+      
+      <label class="md-nav__link" for="__nav_6_12_3">
+        通用
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="通用" data-md-level="3">
+        <label class="md-nav__title" for="__nav_6_12_3">
+          <span class="md-nav__icon md-icon"></span>
+          通用
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%AF%AD%E6%96%87/%E9%80%9A%E7%94%A8/%E4%BD%9C%E6%96%87%E5%86%99%E4%BD%9C/" class="md-nav__link">
+        作文写作
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%AF%AD%E6%96%87/%E9%80%9A%E7%94%A8/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/" class="md-nav__link">
+        句子成分
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%AF%AD%E6%96%87/%E9%80%9A%E7%94%A8/%E6%96%87%E8%A8%80%E6%96%87%E9%98%85%E8%AF%BB/" class="md-nav__link">
+        文言文阅读
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%AF%AD%E6%96%87/%E9%80%9A%E7%94%A8/%E8%AE%B0%E5%8F%99%E6%96%87%E9%98%85%E8%AF%BB/" class="md-nav__link">
+        记叙文阅读
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E8%AF%AD%E6%96%87/%E9%80%9A%E7%94%A8/%E8%AF%8D%E6%80%A7/" class="md-nav__link">
+        词性分为
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_13" data-md-state="indeterminate" type="checkbox" id="__nav_6_13" checked>
+      
+      <label class="md-nav__link" for="__nav_6_13">
+        道法
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="道法" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_13">
+          <span class="md-nav__icon md-icon"></span>
+          道法
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_13_1" data-md-state="indeterminate" type="checkbox" id="__nav_6_13_1" checked>
+      
+      <label class="md-nav__link" for="__nav_6_13_1">
+        八上
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="八上" data-md-level="3">
+        <label class="md-nav__title" for="__nav_6_13_1">
+          <span class="md-nav__icon md-icon"></span>
+          八上
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../notes/%E9%81%93%E6%B3%95/%E5%85%AB%E4%B8%8A/%E7%AC%AC%E4%B8%89%E8%AF%BE-%E7%A4%BE%E4%BC%9A%E7%94%9F%E6%B4%BB%E7%A6%BB%E4%B8%8D%E5%BC%80%E8%A7%84%E5%88%99/" class="md-nav__link">
+        第三课 社会生活离不开规则
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" data-md-state="indeterminate" type="checkbox" id="__nav_7" checked>
+      
+      <label class="md-nav__link" for="__nav_7">
+        Res
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Res" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Res
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../res/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" class="md-nav__link">
+        欢迎使用AceMark
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" data-md-state="indeterminate" type="checkbox" id="__nav_8" checked>
+      
+      <label class="md-nav__link" for="__nav_8">
+        模板
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="模板" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          模板
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../%E6%A8%A1%E6%9D%BF/date/" class="md-nav__link">
+        Date
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../%E6%A8%A1%E6%9D%BF/eng/" class="md-nav__link">
+        Eng
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../%E6%A8%A1%E6%9D%BF/hist/" class="md-nav__link">
+        Hist
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../%E6%A8%A1%E6%9D%BF/locallink/" class="md-nav__link">
+        Locallink
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../%E6%A8%A1%E6%9D%BF/metadata/" class="md-nav__link">
+        Metadata
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../%E6%A8%A1%E6%9D%BF/todo/" class="md-nav__link">
+        Todo
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../%E6%A8%A1%E6%9D%BF/zk/" class="md-nav__link">
+        Zk
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    Setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-diagrams" class="md-nav__link">
+    Practical Diagrams
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-loader" class="md-nav__link">
+    Custom Loader
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    Putting it All Together
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+  
+                
+                
+                <h1 id="advanced-mermaid-notes">Advanced Mermaid Notes<a class="headerlink" href="#advanced-mermaid-notes" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Support</p>
+<p>This is provided to help users get Mermaid running, but we do not officially offer technical support for Mermaid.
+Any issues encounter will require the user to debug it themselves.</p>
+<p>Thee may or may not be issues using an older or newer version of Mermaid than what we have documented here. We may
+not be always be up to date with the latest and greatest Mermaid version.</p>
+<p>We would be happy to accept pull requests that offer to improve things here or to correct misinformation.</p>
+</div>
+<p>In <a href="../../extensions/superfences/">SuperFences</a> we cover <a href="../../extensions/superfences/#custom-fences">custom fences</a>
+and provide an example for using <a href="../../extensions/superfences/#uml-diagram-example">Mermaid diagrams</a>. What we showed in
+the example is the bare minimum required to get Mermaid working. While our example was mainly meant to instruct users on
+how to use custom fences, it was not our intent to give an in depth explanation on how to get Mermaid setup and working
+in the best way possible. It especially does not go into quirks of Mermaid and how to get around common issues.</p>
+<p>In general, we leave setting up custom fences for the user to explore, but since we've gone down this path already, and
+find Mermaid so useful, we thought we'd share some some additional information in case there is a strong desire from any
+of our users to implement a robust Mermaid solution.</p>
+<h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
+<p>Our setup is found below. We use a custom loader and configuration to get what we feel is the best implementation for
+our own personal use. We will explain some of our reasoning later, but below are reference links to the relevant code.</p>
+<div class="admonition settings">
+<p class="admonition-title">Setup</p>
+<ul>
+<li>[Events][onready-event].</li>
+<li>[UML Loader][mermaid-loader].</li>
+<li>[Mermaid configuration settings][mermaid-config].</li>
+<li>[MkDocs configuration][mkdocs-config].</li>
+</ul>
+</div>
+<h2 id="practical-diagrams">Practical Diagrams<a class="headerlink" href="#practical-diagrams" title="Permanent link">&para;</a></h2>
+<p>There are a few diagrams that we feel do not work well for us, and we thought it useful to share why. The main reason is
+that a few of the diagrams are a bit impractical to use due to sizing and scaling issues. While there may be a way to
+massage them to work, we have not currently invested any time in workarounds for these diagrams.</p>
+<p>Some of the less practical examples may work better if they were pre-rendered and included as an image instead. This
+seems to be what Mermaid does in their own [documents][mermaid].</p>
+<div class="admonition success">
+<p class="admonition-title">Practical</p>
+<div class="tabbed-set" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Flowcharts</label><div class="tabbed-content">
+<pre class="mermaid"><code>graph TD
+    A[Hard] --&gt;|Text| B(Round)
+    B --&gt; C{Decision}
+    C --&gt;|One| D[Result 1]
+    C --&gt;|Two| E[Result 2]</code></pre>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Sequence Diagrams</label><div class="tabbed-content">
+<pre class="mermaid"><code>sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice-&gt;&gt;John: Hello John, how are you?
+    loop Healthcheck
+        John-&gt;&gt;John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts &lt;br/&gt;prevail!
+    John--&gt;&gt;Alice: Great!
+    John-&gt;&gt;Bob: How about you?
+    Bob--&gt;&gt;John: Jolly good!</code></pre>
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">Class Diagrams</label><div class="tabbed-content">
+<pre class="mermaid"><code>classDiagram
+    Class01 &lt;|-- AveryLongClass : Cool
+    Class03 *-- Class04
+    Class05 o-- Class06
+    Class07 .. Class08
+    Class09 --&gt; C2 : Where am i?
+    Class09 --* C3
+    Class09 --|&gt; Class07
+    Class07 : equals()
+    Class07 : Object[] elementData
+    Class01 : size()
+    Class01 : int chimp
+    Class01 : int gorilla
+    Class08 &lt;--&gt; C2: Cool label</code></pre>
+</div>
+<input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><label for="__tabbed_1_4">Entity Relationships</label><div class="tabbed-content">
+<pre class="mermaid"><code>erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ LINE-ITEM : contains
+    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses</code></pre>
+</div>
+<input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><label for="__tabbed_1_5">State Diagrams</label><div class="tabbed-content">
+<pre class="mermaid"><code>stateDiagram
+    [*] --&gt; First
+    First --&gt; Second
+    First --&gt; Third
+
+    state First {
+        [*] --&gt; fir
+        fir --&gt; [*]
+    }
+    state Second {
+        [*] --&gt; sec
+        sec --&gt; [*]
+    }
+    state Third {
+        [*] --&gt; thi
+        thi --&gt; [*]
+    }</code></pre>
+</div>
+</div>
+</div>
+<div class="admonition fail">
+<p class="admonition-title">Impractical</p>
+<div class="tabbed-set" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Git</label><div class="tabbed-content">
+<p>Git diagrams are experimental and often don't render to a reasonable size. They overflow, but won't trigger
+scrollbars. They are the only diagram that often renders too large for the element they are assigned to.</p>
+<pre class="mermaid"><code>gitGraph:
+options
+{
+    "nodeSpacing": 150,
+    "nodeRadius": 10
+}
+end
+commit
+branch newbranch
+checkout newbranch
+commit
+commit
+checkout master
+commit
+commit
+merge newbranch</code></pre>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Gantt</label><div class="tabbed-content">
+<p>Gantt charts usually are too big to render properly in a page. If the element is big enough to hold it, and the
+chart is large, they render too small to see. If the element is not wide enough, the chart can sometimes render
+squished and hard to read.</p>
+<pre class="mermaid"><code>gantt
+    dateFormat  YYYY-MM-DD
+    title Adding GANTT diagram to mermaid
+    excludes weekdays 2014-01-10
+
+    section A section
+    Completed task            :done,    des1, 2014-01-06,2014-01-08
+    Active task               :active,  des2, 2014-01-09, 3d
+    Future task               :         des3, after des2, 5d
+    Future task2               :         des4, after des3, 5d</code></pre>
+</div>
+<input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><label for="__tabbed_2_3">Journey</label><div class="tabbed-content">
+<p>Journey diagrams suffer from the same issues as Gantt charts. They just do not scale well and are often hard to
+read.</p>
+<pre class="mermaid"><code>journey
+    title My working day
+    section Go to work
+      Make tea: 5: Me
+      Go upstairs: 3: Me
+      Do work: 1: Me, Cat
+    section Go home
+      Go downstairs: 5: Me
+      Sit down: 5: Me</code></pre>
+</div>
+<input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><label for="__tabbed_2_4">Pie</label><div class="tabbed-content">
+<p>Pie at times can seem to work great, but other times it can be hard to read or missing labels all together.
+Like the others in this list, it relates to sizing and scaling. For instance, if you were to view this on a
+mobile device, you'd likely see the key for the pie chart missing.</p>
+<pre class="mermaid"><code>pie
+    title Key elements in Product X
+    "Calcium" : 42.96
+    "Potassium" : 50.05
+    "Magnesium" : 10.01
+    "Iron" :  5</code></pre>
+</div>
+</div>
+</div>
+<h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
+<p>We do some configuration via the initialization API command to tweak the diagrams a little. This includes theming and
+disabling of problematic features.</p>
+<p>We only include the Mermaid library and the configuration options in pages that are actively rendering Mermaid diagrams.
+This is to cut down on loading libraries in pages that aren't utilizing them. We do this by using
+<a href="../../extensions/snippets/">Snippets</a>. We simply attach the necessary [snippet][mermaid-config] at the bottom of the
+page. Our custom loader will only execute if the Mermaid library is loaded, so simply including the library will
+trigger it.</p>
+<div class="admonition note">
+<p class="admonition-title">Configuration Notes</p>
+<ol>
+<li>
+<p>We disable <code>htmlLabels</code> in flowcharts as we've had issues with it in the past. It may or may not be okay to
+   enable. Your mileage may vary.</p>
+</li>
+<li>
+<p>If the option is available in a diagram, we disable <code>useMaxWidth</code> as we prefer that our diagrams do not scale
+   within their parent element, we rather them overflow with a scrollbar. You can leave these enabled if you like.
+   Since we render our diagrams under a custom element with a shadow DOM, to get scrollbars, we simply enable
+   <code class="highlight"><span class="nt">overflow</span><span class="o">:</span> <span class="nt">auto</span></code> on the custom <code>mermaid-div</code> element (under the host DOM, not the shadow DOM). You can
+   check out our stylesheet that does this [here][mermaid-style].</p>
+</li>
+<li>
+<p>We disable <code>startOnLoad</code> as we provide our own loader (for reasons we will get into later).</p>
+</li>
+<li>
+<p>We do a quite a bit of custom theme overrides. Most of this is done through the Mermaid configuration options:
+   <code>theme</code>, <code>themeVariables</code>, and <code>themeCSS</code>. Most users would simply use one of the default themes via the <code>theme</code>
+   option.</p>
+</li>
+</ol>
+</div>
+<h2 id="custom-loader">Custom Loader<a class="headerlink" href="#custom-loader" title="Permanent link">&para;</a></h2>
+<p>While using Mermaid, we've found a couple of issues which we were able to solve by using our own
+[custom loader][mermaid-loader]. The loader contains all the logic needed to find the Mermaid diagrams, convert them,
+wrap them in a shadow DOM, and insert them into the current document.</p>
+<p>In order to use the loader, it should be attached to a <code>DOMContentLoaded</code> event to execute only after the document is
+loaded. We create our own [<code>onReady</code>][onready-event] function that checks if the Mermaid library is loaded, and only if
+it is, we execute our loader.</p>
+<p>We also create an <code>observer</code> event that watches for when the attribute that controls the color scheme on our site
+changes. When a color change occurs, we run our loader again and regenerate our diagrams. This is possible because we
+hide away the original content in our shadow DOM along with the generated diagram.</p>
+<div class="admonition bug">
+<p class="admonition-title">Issues</p>
+<ol>
+<li>
+<p>Diagrams that are found in tabbed interfaces or details, where the element may be hidden on page load, don't
+   always render at a visible size if using Mermaid's default loader.</p>
+</li>
+<li>
+<p>Mermaid uses IDs in their SVG diagrams, and these can sometimes cause conflicts if you happen to have IDs on your
+   page that match one that they use.</p>
+</li>
+<li>
+<p>Mermaid does not always use unique IDs. This can cause some elements of a diagram to disappear if one diagram
+   happens to have the same ID and it is hidden in a details element or a tabbed interface.</p>
+</li>
+<li>
+<p>We'd like to be able to have different configs for different color schemes (light mode, dark mode, etc.) and we'd
+   like to be able to dynamically reload all the diagrams on theme change.</p>
+</li>
+</ol>
+</div>
+<p>We solve these issues doing a couple things in our own custom loader.</p>
+<div class="admonition success">
+<p class="admonition-title">Solutions</p>
+<ol>
+<li>
+<p>Using the <code class="highlight"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span></code> element as a parent, we attach a surrogate element to it and render the diagram there.
+   Once rendered, we then insert the diagram back to where the original custom fence was. This ensures it renders
+   under a visible parent, and renders at a normal size.</p>
+</li>
+<li>
+<p>We wrap each diagram in a shadow DOM element. This prevents ID leakage from one diagram to another or to the
+   host.</p>
+</li>
+<li>
+<p>We accept our own config structure that allows us to specify different configs based on the scheme being used.
+   We currently adopt what MkDocs Material uses and look for the <code>data-md-color-scheme</code> on the <code>body</code> tag. Depending
+   on the scheme that is set there, we pick the config under that name. If none are found we try the <code>default</code>
+   config, and if that is not found, we provide a sane default. We use a <code>MutationObserver</code> to watch for changes
+   to that attribute and render the diagrams again with a new config.</p>
+</li>
+</ol>
+</div>
+<p>Apart from the issues we were trying to solve, we also use a custom loader for personal aesthetics as we like to render
+our diagrams in <code class="highlight"><span class="p">&lt;</span><span class="nt">pre</span><span class="p">&gt;&lt;</span><span class="nt">code</span><span class="p">&gt;</span></code> tags. This allows us to render the diagrams as normal code blocks in the rare case
+that we cannot load the Mermaid library from the specified CDN.</p>
+<details class="settings"><summary>Latest Generated Loader</summary><p>This is generated by <a href="https://babeljs.io/">Babel</a> during our build process. Babel is used so we can write in modern
+JavaScript syntax, but then package it in older JavaScript syntax which is more widely supported. You can always
+check out the original that this is generated from by looking [here][onready-event] and [here][mermaid-loader].</p>
+<div class="md-max-height highlight"><pre><span></span><code>
+</code></pre></div>
+</details>
+<h2 id="putting-it-all-together">Putting it All Together<a class="headerlink" href="#putting-it-all-together" title="Permanent link">&para;</a></h2>
+<p>Your document should include the following:</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://unpkg.com/mermaid@8.6.4/dist/mermaid.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="c1">// Optional config</span>
+<span class="c1">// If your document is not specifying `data-md-color-scheme` for color schemes,</span>
+<span class="c1">// you just need to specify `default`.</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">mermaidConfig</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="k">default</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">startOnLoad</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nx">theme</span><span class="o">:</span> <span class="s2">&quot;default&quot;</span><span class="p">,</span>
+    <span class="nx">flowchart</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">htmlLabels</span><span class="o">:</span> <span class="kc">false</span>
+    <span class="p">},</span>
+    <span class="nx">er</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">useMaxWidth</span><span class="o">:</span> <span class="kc">false</span>
+    <span class="p">},</span>
+    <span class="nx">sequence</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">useMaxWidth</span><span class="o">:</span> <span class="kc">false</span>
+      <span class="c1">// Mermaid handles Firefox a little different.</span>
+      <span class="c1">// For some reason, it doesn&#39;t attach font sizes to the labels in Firefox.</span>
+      <span class="c1">// If we specify the documented defaults, font sizes are written to the labels in Firefox.</span>
+      <span class="nx">noteFontWeight</span><span class="o">:</span> <span class="s2">&quot;14px&quot;</span><span class="p">,</span>
+      <span class="nx">actorFontSize</span><span class="o">:</span> <span class="s2">&quot;14px&quot;</span><span class="p">,</span>
+      <span class="nx">messageFontSize</span><span class="o">:</span> <span class="s2">&quot;16px&quot;</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+
+  <span class="nx">slate</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">startOnLoad</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nx">theme</span><span class="o">:</span> <span class="s2">&quot;dark&quot;</span><span class="p">,</span>
+    <span class="nx">flowchart</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">htmlLabels</span><span class="o">:</span> <span class="kc">false</span>
+    <span class="p">},</span>
+    <span class="nx">er</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">useMaxWidth</span><span class="o">:</span> <span class="kc">false</span>
+    <span class="p">},</span>
+    <span class="nx">sequence</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">useMaxWidth</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="nx">noteFontWeight</span><span class="o">:</span> <span class="s2">&quot;14px&quot;</span><span class="p">,</span>
+      <span class="nx">actorFontSize</span><span class="o">:</span> <span class="s2">&quot;14px&quot;</span><span class="p">,</span>
+      <span class="nx">messageFontSize</span><span class="o">:</span> <span class="s2">&quot;16px&quot;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="c1">// The loader from &quot;Custom Loader&quot; should go here.</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>If you are using MkDocs, you would probably reference the <code>extra.js</code> from your <code>docs</code> folder. You may also reference
+your config from your <code>docs</code> folder as well, or maybe embed it in your document page directly.</p>
+<div class="highlight"><pre><span></span><code><span class="nt">extra_javascript</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">https://unpkg.com/mermaid@8.6.4/dist/mermaid.min.js</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">optionalConfig.js</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">extra.js</span>
+</code></pre></div>
+<p>Then in your documents, do something like this:</p>
+<div class="highlight"><pre><span></span><code>```mermaid
+graph TD
+    A[Hard] --&gt;|Text| B(Round)
+    B --&gt; C{Decision}
+    C --&gt;|One| D[Result 1]
+    C --&gt;|Two| E[Result 2]
+```
+</code></pre></div>
+<p>To get something like this:</p>
+<pre class="mermaid"><code>graph TD
+    A[Hard] --&gt;|Text| B(Round)
+    B --&gt; C{Decision}
+    C --&gt;|One| D[Result 1]
+    C --&gt;|Two| E[Result 2]</code></pre>
+                
+              
+
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+
+<footer class="md-footer">
+  
+    <nav
+      class="md-footer__inner md-grid"
+      aria-label="Footer"
+    >
+      
+        <a
+          href="../Untitled/"
+          class="md-footer__link md-footer__link--prev"
+          rel="prev"
+        >
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              Untitled
+            </div>
+          </div>
+        </a>
+      
+      
+        <a
+          href="../slugs/"
+          class="md-footer__link md-footer__link--next"
+          rel="next"
+        >
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              Slugs
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        with emoji by
+        <a href="https://github.com/twitter/twemoji" target="_blank" rel="noopener">
+          Twemoji
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.expand", "tabs"], "translations": {"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../../../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    
+    
+      <script src="../../../../../assets/javascripts/bundle.9b151c6a.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@8.9.1/dist/mermaid.min.js"></script>
+      
+        <script src="../../../../../assets/pymdownx-extras/extra-uml-51b11a9a.js"></script>
+      
+    
+  </body>
+</html>
